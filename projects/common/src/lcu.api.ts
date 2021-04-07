@@ -6,3 +6,5 @@ export * from './lib/services/lcu.service';
 export * from './lib/state/lcu-management-state.context';
 export * from './lib/state/lcu-management.state';
 export * from './lib/utils/lcu.utils';
+export * from './lib/elements/point-forecast/point-forecast.component';
+export * from './lib/elements/route-forecast/route-forecast.component';
