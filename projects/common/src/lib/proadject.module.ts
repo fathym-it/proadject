@@ -5,15 +5,16 @@ import { FathymSharedModule, MaterialModule } from '@lcu/common';
 import { LcuService } from './services/lcu.service';
 import { LcuComponent } from './controls/lcu/lcu.component';
 import { LcuDirective } from './directives/lcu.directive';
-import { ProadjectPointForecastElementComponent } from './elements/point-forecast/point-forecast.component';
 import { ProadjectRouteForecastElementComponent } from './elements/route-forecast/route-forecast.component';
+import { ProadjectPointForecastElementComponent } from './elements/point-forecast/point-forecast.component';
 
 @NgModule({
   declarations: [
     LcuComponent,
     LcuDirective,
-    ProadjectPointForecastElementComponent,
-    ProadjectRouteForecastElementComponent
+    ProadjectRouteForecastElementComponent,
+    ProadjectPointForecastElementComponent
+    
   ],
   imports: [
     FathymSharedModule,
@@ -22,7 +23,10 @@ import { ProadjectRouteForecastElementComponent } from './elements/route-forecas
     FlexLayoutModule,
     MaterialModule
   ],
-  exports: [],
+  exports: [
+    ProadjectPointForecastElementComponent,
+    ProadjectRouteForecastElementComponent
+  ],
   entryComponents: []
 })
 export class ProadjectModule {

@@ -1,5 +1,11 @@
-import { Component, OnInit, Injector } from '@angular/core';
-import { LCUElementContext, LcuElementComponent } from '@lcu/common';
+import { 
+  Component, 
+  OnInit, 
+  Injector } from '@angular/core';
+import {
+  LCUElementContext,
+  LcuElementComponent,
+} from '@lcu/common';
 
 export class ProadjectPointForecastElementState {}
 
@@ -12,7 +18,9 @@ export const SELECTOR_PROADJECT_POINT_FORECAST_ELEMENT = 'proadject-point-foreca
   templateUrl: './point-forecast.component.html',
   styleUrls: ['./point-forecast.component.scss']
 })
-export class ProadjectPointForecastElementComponent extends LcuElementComponent<ProadjectPointForecastContext> implements OnInit {
+export class ProadjectPointForecastElementComponent 
+  extends LcuElementComponent<ProadjectPointForecastContext> 
+  implements OnInit {
   //  Fields
 
   //  Properties
