@@ -14,7 +14,6 @@ import { ProadjectPointForecastElementComponent } from './elements/point-forecas
     LcuDirective,
     ProadjectRouteForecastElementComponent,
     ProadjectPointForecastElementComponent
-    
   ],
   imports: [
     FathymSharedModule,
@@ -23,10 +22,7 @@ import { ProadjectPointForecastElementComponent } from './elements/point-forecas
     FlexLayoutModule,
     MaterialModule
   ],
-  exports: [
-    ProadjectPointForecastElementComponent,
-    ProadjectRouteForecastElementComponent
-  ],
+  exports: [],
   entryComponents: []
 })
 export class ProadjectModule {
