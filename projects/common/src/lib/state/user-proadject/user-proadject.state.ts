@@ -4,9 +4,11 @@ export class UserProadjectState {
 
     public CurrentLocation: LocationInfo;
 
+    public Loading?: boolean;
+
 
 }
 
 export class LocationInfo {
-    
+
 }
