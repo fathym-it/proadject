@@ -7,6 +7,8 @@ import { LcuComponent } from './controls/lcu/lcu.component';
 import { LcuDirective } from './directives/lcu.directive';
 import { ProadjectRouteForecastElementComponent } from './elements/route-forecast/route-forecast.component';
 import { ProadjectPointForecastElementComponent } from './elements/point-forecast/point-forecast.component';
+import { AppHostModule } from '@lowcodeunit/app-host-common';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +22,18 @@ import { ProadjectPointForecastElementComponent } from './elements/point-forecas
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    AppHostModule
   ],
-  exports: [],
-  entryComponents: []
+  exports: [
+    LcuComponent,
+    LcuDirective,
+    AppHostModule
+  ],
+  entryComponents: [
+    ProadjectPointForecastElementComponent,
+    ProadjectRouteForecastElementComponent
+  ]
 })
 export class ProadjectModule {
   static forRoot(): ModuleWithProviders<ProadjectModule> {

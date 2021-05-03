@@ -6,10 +6,14 @@ import {
   LCUElementContext,
   LcuElementComponent,
 } from '@lcu/common';
+import { UserProadjectStateContext } from '../../state/user-proadject/user-proadject-state.context';
+import { UserProadjectState } from '../../state/user-proadject/user-proadject.state';
 
-export class ProadjectPointForecastElementState {}
+// export class ProadjectPointForecastElementState {}
 
-export class ProadjectPointForecastContext extends LCUElementContext<ProadjectPointForecastElementState> {}
+export class ProadjectPointForecastContext extends LCUElementContext<UserProadjectState> {
+
+}
 
 export const SELECTOR_PROADJECT_POINT_FORECAST_ELEMENT = 'proadject-point-forecast-element';
 
@@ -23,6 +27,9 @@ export class ProadjectPointForecastElementComponent
   implements OnInit {
   //  Fields
 
+  protected userProadjectStateCtx: UserProadjectStateContext;
+
+
   //  Properties
 
   //  Constructors
@@ -33,6 +40,15 @@ export class ProadjectPointForecastElementComponent
   //  Life Cycle
   public ngOnInit() {
     super.ngOnInit();
+    
+    this.userProadjectStateCtx.Context.subscribe((state: any) => {
+      this.Context.State = state;
+
+      if (this.Context.State) {
+        // this.stateChanged();
+      }
+
+    });
   }
 
   //  API Methods

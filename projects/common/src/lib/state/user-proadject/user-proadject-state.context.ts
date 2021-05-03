@@ -5,7 +5,7 @@ import { UserProadjectState } from './user-proadject.state';
 @Injectable({
     providedIn: 'root'
 })
-export class LcuManagementStateContext extends StateContext<UserProadjectState> {
+export class UserProadjectStateContext extends StateContext<UserProadjectState> {
 
     // Constructors
     constructor(protected injector: Injector) {

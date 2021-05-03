@@ -12,7 +12,9 @@ export const SELECTOR_PROADJECT_ROUTE_FORECAST_ELEMENT = 'proadject-route-foreca
   templateUrl: './route-forecast.component.html',
   styleUrls: ['./route-forecast.component.scss']
 })
-export class ProadjectRouteForecastElementComponent extends LcuElementComponent<ProadjectRouteForecastContext> implements OnInit {
+export class ProadjectRouteForecastElementComponent 
+  extends LcuElementComponent<ProadjectRouteForecastContext> 
+  implements OnInit {
   //  Fields
 
   //  Properties
