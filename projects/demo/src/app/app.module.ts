@@ -6,7 +6,7 @@ import { FathymSharedModule, LCUServiceSettings, MaterialModule } from '@lcu/com
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './controls/home/home.component';
-import { ProadjectModule, ProadjectPointForecastElementComponent } from 'projects/common/src/lcu.api';
+import { ProadjectModule, ProadjectPointForecastElementComponent, UserProadjectStateContext } from 'projects/common/src/lcu.api';
 import { environment } from '../environments/environment';
 
 @NgModule({
