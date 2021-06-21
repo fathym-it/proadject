@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-route-forecast',
+  selector: 'lcu-route-forecast',
   templateUrl: './route-forecast.component.html',
   styleUrls: ['./route-forecast.component.css']
 })

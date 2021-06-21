@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-point-forecast',
+  selector: 'lcu-point-forecast',
   templateUrl: './point-forecast.component.html',
   styleUrls: ['./point-forecast.component.css']
 })
