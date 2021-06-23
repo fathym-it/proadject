@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-// import { DragDropModule } from '@angular/cdk/drag-drop';
-// import { CdkTableModule } from '@angular/cdk/table';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CdkTableModule } from '@angular/cdk/table';
 
 import { MatTreeModule } from '@angular/material/tree';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
@@ -72,8 +72,8 @@ const materialModules: Array<any> = [
   MatTooltipModule,
   MatTreeModule,
   // CDK Modules
-  // CdkTableModule,
-  // DragDropModule,
+  CdkTableModule,
+  DragDropModule,
 ];
 
 const providers: Array<any> = [
