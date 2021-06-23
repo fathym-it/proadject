@@ -4,6 +4,8 @@ export class ProadjectState {
 
     public CurrentLocation: Location;
 
+    public Loading: boolean;
+
 }
 
 export class UsersSettings {

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@proadject/common';
-
+import { CommonModule, MaterialModule } from '@proadject/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -12,7 +11,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    MaterialModule
     ],
   providers: [],
   bootstrap: [AppComponent]
