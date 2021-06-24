@@ -10,10 +10,10 @@ export class ProadjectService {
 
   //  API Methods
   public GetUsersSettings() {
-    return this.http.get('api/proadject/configuration/user/settings', {});
+    return this.http.get('api/lowcodeunit/configuration/user/settings', {});
   };
 
   public SetUsersSettings() {
-    return this.http.post('api/proadject/configuration/user/settings', {});
+    return this.http.post('api/lowcodeunit/configuration/user/settings', {});
   };
 }

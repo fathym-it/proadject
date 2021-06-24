@@ -18,6 +18,7 @@ export class PointForecastComponent implements OnInit {
 
     this.getUsersSettings();
     console.log("State = ", this.State);
+    this.getCurrentLocation();
 
   }
 
@@ -28,6 +29,22 @@ export class PointForecastComponent implements OnInit {
     this.proadjectSvc.GetUsersSettings().subscribe(resp => {
       this.State.UsersSettings = <UsersSettings> resp;
     });
+  }
+
+  protected getCurrentLocation(){
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(this.showPosition);
+      } else { 
+        // x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    
+  }
+
+  protected showPosition(position){
+    console.log("Position: ", position);
+    this.State.CurrentLocation.Latitude = position.coords.latitude;
+    this.State.CurrentLocation.Longitude = position.coords.longitude;
+
   }
 
 }
