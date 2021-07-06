@@ -22,7 +22,7 @@
     "pack:styles": "concat-glob-cli -f \"dist/lcu/wc/styles.*.css\" -o dist/lcu/wc/proadject.lcu.css",
     "start": "npm run clean && npm-run-all --parallel watch:*",
     "start:common": "ng build --project common --watch --configuration development",
-    "start:demo": "ng serve demo --port=4200 --aot=false",
+    "start:demo": "ng serve demo --port=4200 --aot=true",
     "start:lcu": "ng build --extra-webpack-config projects/lcu/webpack.externals.js --project lcu --single-bundle --watch --configuration development",
     "watch:common": "ng build common --watch",
     "watch:demo": "wait-on dist/common/public-api.d.ts && npm run start:demo",

@@ -14,6 +14,6 @@ export class ProadjectService {
   };
 
   public SetUsersSettings() {
-    return this.http.post('api/lowcodeunit/configuration/user/settings', {});
+    return this.http.post('api/proadject/configuration/user/settings', {});
   };
 }

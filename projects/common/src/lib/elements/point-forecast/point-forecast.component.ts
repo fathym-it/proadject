@@ -5,7 +5,7 @@ import { ProadjectState, UsersSettings } from '../../state/proadject.state';
 @Component({
   selector: 'lcu-point-forecast',
   templateUrl: './point-forecast.component.html',
-  styleUrls: ['./point-forecast.component.css']
+  styleUrls: ['./point-forecast.component.scss']
 })
 export class PointForecastComponent implements OnInit {
 
