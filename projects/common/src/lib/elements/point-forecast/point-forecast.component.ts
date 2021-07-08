@@ -17,7 +17,7 @@ export class PointForecastComponent implements OnInit {
   ngOnInit(): void {
 
     this.getUsersSettings();
-    console.log("State = ", this.State);
+    // console.log("State = ", this.State);
     this.getCurrentLocation();
 
   }
@@ -28,6 +28,7 @@ export class PointForecastComponent implements OnInit {
     }
     this.proadjectSvc.GetUsersSettings().subscribe(resp => {
       this.State.UsersSettings = <UsersSettings> resp;
+      console.log("User Settings: ", this.State.UsersSettings)
     });
   }
 
@@ -44,6 +45,7 @@ export class PointForecastComponent implements OnInit {
     console.log("Position: ", position);
     this.State.CurrentLocation.Latitude = position.coords.latitude;
     this.State.CurrentLocation.Longitude = position.coords.longitude;
+    console.log("State: ", this.State);
 
   }
 
