@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from 'projects/common/src/lib/common.module';
 import { MaterialModule } from 'projects/common/src/lib/material.module';
@@ -18,7 +19,9 @@ import { AppComponent } from './app.component';
     CommonModule,
     MaterialModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatButtonToggleModule
+
     ],
   providers: [],
   bootstrap: [AppComponent]

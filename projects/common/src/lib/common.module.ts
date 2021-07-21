@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { CommonComponent } from './common.component';
 import { ForecastThumbnailComponent } from './elements/forecast-thumbnail/forecast-thumbnail.component';
+import { ForecastToggleComponent } from './elements/forecast-toggle/forecast-toggle.component';
 import { PointForecastComponent } from './elements/point-forecast/point-forecast.component';
 import { RouteForecastComponent } from './elements/route-forecast/route-forecast.component';
 import { SplashScreenComponent } from './elements/splash-screen/splash-screen.component';
@@ -16,19 +18,21 @@ import { ProadjectService } from './services/proadject.service';
     PointForecastComponent,
     RouteForecastComponent,
     SplashScreenComponent,
-    ForecastThumbnailComponent
+    ForecastThumbnailComponent,
+    ForecastToggleComponent
 
   ],
   imports: [
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   exports: [
     CommonComponent,
     PointForecastComponent,
     RouteForecastComponent,
     SplashScreenComponent,
-    ForecastThumbnailComponent
+    ForecastThumbnailComponent,
+    ForecastToggleComponent
   ],
   providers: [
     ProadjectService
