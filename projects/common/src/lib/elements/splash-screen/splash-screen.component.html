@@ -1,0 +1,25 @@
+<div id="splash-page" 
+    fxLayout.lt-md="column" 
+    fxLayoutAlign.lt-md="end start"
+    fxFlex.lt-md="100">
+
+    <div id="forecast-container" 
+        fxLayout.lt-md="column" 
+        fxLayoutAlign.lt-md="end start"
+        fxFlexOffset.lt-md="100">
+
+        <div id="temp">{{ State.CurrentForecast.Temperature }} &deg;</div>
+
+        <div id="location-container"
+            fxLayout.lt-md="row">
+            <div id="location">{{ State.CurrentLocation.City }}, {{ State.CurrentLocation.State }} &nbsp;</div>
+            <mat-icon>near_me</mat-icon>
+        </div>
+
+        <div id="last-updated">{{ LastUpdated }}</div>
+        <i class="wi wi-day-sunny"></i>
+    </div>
+
+</div>
+
+

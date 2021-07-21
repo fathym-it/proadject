@@ -1,0 +1,18 @@
+<div id="forecast-thumbnail" fxLayout.lt-md="column" fxLayoutAlign.lt-md="space-between center">
+    <div id="thumbnail-title">{{ Title }}</div>
+    <mat-icon id="thumbnail-icon">{{ Forecast.WeatherIcon }}</mat-icon>
+    <div id="thumnail-high-low"> {{ Forecast.TempHigh }}&nbsp;/&nbsp;{{Forecast.TempLow}}</div>
+    <div id="wind-precip-container" fxLayout.lt-md="row" fxLayoutAlign.lt-md="space-between center">
+        <div id="precip-container" fxLayout.lt-md="row" fxLayoutAlign.lt-md="space-between center">
+
+            <mat-icon id="precip-icon" class="icon">{{ Forecast.PrecipIcon }}</mat-icon>
+            <div id="precip-chance">{{ PrecipPercentage }}</div>
+
+        </div>
+        <div id="wind-container" fxLayout.lt-md="row" fxLayoutAlign.lt-md="space-between center">
+            <mat-icon id="wind-direction-icon" class="icon">{{ Forecast.WindIcon }}</mat-icon>
+            <div id="wind-speed">{{ Forecast.WindSpeed }}</div>
+
+        </div>
+    </div>
+</div>

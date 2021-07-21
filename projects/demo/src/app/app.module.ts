@@ -1,5 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from 'projects/common/src/lib/common.module';
 import { MaterialModule } from 'projects/common/src/lib/material.module';
@@ -16,7 +17,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     CommonModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
     ],
   providers: [],
   bootstrap: [AppComponent]
