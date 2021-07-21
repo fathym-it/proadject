@@ -56,6 +56,10 @@ export class AppComponent {
     };
   }
 
+  public doSomething(){
+    console.log("worked")
+  }
+
 
 
 

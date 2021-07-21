@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { CommonComponent } from './common.component';
 import { ForecastThumbnailComponent } from './elements/forecast-thumbnail/forecast-thumbnail.component';
 import { ForecastToggleComponent } from './elements/forecast-toggle/forecast-toggle.component';
