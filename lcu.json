@@ -1,23 +1,14 @@
 {
-	"templates": {
-		"repository": "lowcodeunit-devkit/lcu-cli-templates-core",
-		"scope": "@fathym-it",
-		"workspace": "proadject"
-	},
-	"config": {
-		"wc": [
-			"wc/proadject.lcu.js"
-		],
-		"solutions": {
-			"point-forecast": {
-				"element": "proadject-point-forecast-element"
-			},
-			"route-forecast": {
-				"element": "proadject-route-forecast-element"
-			}
-		},
-		"elements": {},
-		"data-flow": {},
-		"dependencies": {}
-	}
+  "templates": {
+    "repository": "lowcodeunit-devkit/lcu-cli-templates-core",
+    "scope": "@lcu",
+    "workspace": "proadject"
+  },
+  "config": {
+    "wc": ["wc/proadject.lcu.js"],
+    "solutions": {},
+    "elements": {},
+    "data-flow": {},
+    "dependencies": {}
+  }
 }

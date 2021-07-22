@@ -1,10 +1,5 @@
-/*
- * Public API Surface of common
- */
-
-export * from './lib/common.service';
-export * from './lib/common.component';
-export * from './lib/common.module';
+export * from './lib/proadject.module';
+export * from './lib/services/proadject.service';
 export * from './lib/elements/point-forecast/point-forecast.component';
 export * from './lib/elements/route-forecast/route-forecast.component';
 export * from './lib/elements/splash-screen/splash-screen.component';

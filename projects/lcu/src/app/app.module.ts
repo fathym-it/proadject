@@ -1,18 +1,27 @@
+import { ProadjectModule } from '@proadject/proadject-common/';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FathymSharedModule, LCUServiceSettings, MaterialModule } from '@lcu/common';
+import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    FathymSharedModule.forRoot(),
+    MaterialModule,
+    FlexLayoutModule,
+    ProadjectModule.forRoot()
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {
+      provide: LCUServiceSettings,
+      useValue: FathymSharedModule.DefaultServiceSettings(environment)
+    }
+  ],
+  exports: [ProadjectModule]
 })
-export class AppModule { }
+export class AppModule {}

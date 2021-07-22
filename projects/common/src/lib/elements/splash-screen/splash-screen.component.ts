@@ -33,7 +33,7 @@ export class SplashScreenComponent implements OnInit {
   
 }
 
-protected showPosition(position){
+protected showPosition(position: any){
   console.log("Position: ", position);
   this.State.CurrentLocation.Latitude = position.coords.latitude;
   this.State.CurrentLocation.Longitude = position.coords.longitude;

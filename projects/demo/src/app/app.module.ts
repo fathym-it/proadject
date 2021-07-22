@@ -1,29 +1,31 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from 'projects/common/src/lib/common.module';
-import { MaterialModule } from 'projects/common/src/lib/material.module';
-// import { CommonModule, MaterialModule } from '@proadject/common';
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FathymSharedModule, MaterialModule } from '@lcu/common';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './controls/home/home.component';
+import { ProadjectModule } from '@proadject/proadject-common';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    FathymSharedModule,
     MaterialModule,
-    HttpClientModule,
     FlexLayoutModule,
-    MatButtonToggleModule
-
-    ],
+    ProadjectModule.forRoot()
+  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [ProadjectModule],
+  entryComponents: []
 })
 export class AppModule { }

@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
-import { DailyForecast, ProadjectState } from 'projects/common/src/lib/state/proadject.state';
+import { Component, OnInit } from '@angular/core';
+import { ProadjectState } from 'projects/common/src/lib/state/proadject.state';
 
 @Component({
   selector: 'lcu-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'demo';
+
+  public ngOnInit(): void {
+    
+  }
 
   public ThumbnailType: string = "day";
 
@@ -59,8 +63,6 @@ export class AppComponent {
   public doSomething(){
     console.log("worked")
   }
-
-
 
 
 }
