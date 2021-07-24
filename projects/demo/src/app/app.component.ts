@@ -61,7 +61,6 @@ export class AppComponent implements OnInit {
 
   public ngOnInit(): void {
     setTimeout(() => {
-      console.log('FUCK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
       debugger;
       this.themeBuilderService.MaterialTheme = 'https://www.iot-ensemble.com/assets/theming/theming.scss';
       this.setupThemes();
