@@ -113,7 +113,7 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": false
             }
           }
         },
@@ -207,21 +207,21 @@
                 "output": "/"
               },
               {
-                "glob": "**/*",
-                "input": "./node_modules/@lcu/common/assets",
-                "output": "/assets/"
-              },
-              {
-                "glob": "**/*",
-                "input": "./projects/common/assets",
-                "output": "/assets/"
-              },
+								"glob": "**/*",
+								"input": "node_modules/sass.js/dist",
+								"output": "/assets"
+							},
               "projects/demo/src/docs"
             ],
             "styles": [
-              "projects/demo/src/styles.scss"
+              "projects/demo/src/styles.scss",
+              "projects/common/assets/_common.scss"
             ],
-            "scripts": []
+            "scripts": 
+            [
+              "./node_modules/sass.js/dist/sass.js",
+							"./node_modules/sass.js/dist/sass.worker.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -245,7 +245,7 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": false
             }
           }
         },

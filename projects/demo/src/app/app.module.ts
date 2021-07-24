@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './controls/home/home.component';
 import { ProadjectModule } from '@proadject/proadject-common';
-
+import { ThemeBuilderModule } from '@lowcodeunit/lcu-theme-builder-common';
 
 @NgModule({
   declarations: [
@@ -21,11 +21,15 @@ import { ProadjectModule } from '@proadject/proadject-common';
     FathymSharedModule,
     MaterialModule,
     FlexLayoutModule,
-    ProadjectModule.forRoot()
+    ProadjectModule.forRoot(),
+    ThemeBuilderModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [ProadjectModule],
+  exports: [
+    ProadjectModule,
+    ThemeBuilderModule
+  ],
   entryComponents: []
 })
 export class AppModule { }

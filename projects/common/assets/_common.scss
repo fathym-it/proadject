@@ -1,32 +1,6 @@
 @import '../../../node_modules/@lcu/common/assets/styles/fathym-global.styles';
 @import '../../../node_modules/@lcu/common/assets/theming/common-theme';
 
-/**
-  * mixin to set vertical or horizontal dividers
-  */
-  @mixin divider($direction, $height: $divider-size, $width: 100%, $color: var(--theme-accent-500)) {
-
-    background-color: $color;
-
-    @if $direction == vertical {
-      min-height: $height;
-      top:10%;
-      bottom:10%;
-      min-width: $divider-size;
-    } @else if $direction == horizontal {
-      height: $height;
-      width: $width;
-    } @else {
-      @error "Unknown direction #{$direction}"
-    }
-  }
-
-  @mixin mat-icon-size($size: 24px) {
-    font-size: $size;
-    height: $size;
-    width: $size;
-  }
-
 $primary: map-get($global-theme, primary);
 $accent: map-get($global-theme, accent);
 $warn: map-get($global-theme, warn);
@@ -54,7 +28,7 @@ $divider-size: 5px;
     --initial-warn: #{mat-color($warn)};
     --initial-dark-background: #222222;
     --initial-light-background: #f2f2f2;
-    --initial-dark-background: #{invert(mat-color($background, card, .65))};
+    --initial-dark-background: #{invert(mat-color($background, card, 1))};
     --initial-light-background: #{mat-color($background, card)};
     --initial-light-text: #{map-get(map-get($global-theme, 'foreground'), 'text')};
     --initial-dark-text: #{invert(map-get(map-get($global-theme, 'foreground'), 'text'))};
@@ -73,14 +47,14 @@ $divider-size: 5px;
 }
 
 // * {
-  // margin: 0;
-  // padding: 0;
-  // box-sizing: border-box;
-  // font-size: 62.5%;
+//   // margin: 0;
+//   // padding: 0;
+//   // box-sizing: border-box;
+//   // font-size: 62.5%;
 // }
 
 body {
-  background-color: var(--initial-dark-background);
+  background-color: var(--initial-light-background);
 }
 
 :host {

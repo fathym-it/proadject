@@ -1,2 +1,6 @@
-// https://stackblitz.com/edit/angular-pjgby6?file=src%2Fapp%2Fapp.component.html
-@import '../../../common/styles/common';
+@import '../../../common/assets/common';
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: var(--theme-accent-500);
+}

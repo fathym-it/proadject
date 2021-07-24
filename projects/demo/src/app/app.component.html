@@ -1,5 +1,18 @@
-<lcu-splash-screen [state] = "State"></lcu-splash-screen> 
+<div fxLayout="column" fxFlexFill>
+    <mat-toolbar 
+      color="primary" 
+      fxLayout="row" 
+      fxLayoutAlign="end center">
+      <!-- <lcu-theme-picker dark-mode="true"></lcu-theme-picker> -->
+    </mat-toolbar>
+
+    <lcu-splash-screen [state] = "State"></lcu-splash-screen> 
 <lcu-forecast-toggle></lcu-forecast-toggle>
-<button mat-button (onclick)="doSomething()">Basic</button>
+<button mat-raised-button color="accent">Accent</button>
+<button color="primary" mat-raised-button (onclick)="doSomething()">Basic</button>
 <lcu-forecast-thumbnail [forecast] = "State.CurrentForecast" [type]="ThumbnailType"></lcu-forecast-thumbnail>
 <!-- <lcu-point-forecast></lcu-point-forecast> -->
+<div class="margin-5 item">sdfsd</div>
+</div>
+
+
