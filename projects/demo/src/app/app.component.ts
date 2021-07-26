@@ -60,11 +60,10 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    setTimeout(() => {
-      debugger;
+    // setTimeout(() => {
       this.themeBuilderService.MaterialTheme = 'https://www.iot-ensemble.com/assets/theming/theming.scss';
       this.setupThemes();
-    }, 2000);
+    // }, 2000);
  
   }
 
@@ -102,7 +101,7 @@ export class AppComponent implements OnInit {
           }
         )
       ];
-      debugger;
+
       this.themeBuilderService.SetThemes(themes);
     }
 
