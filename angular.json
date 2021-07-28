@@ -214,8 +214,7 @@
               "projects/demo/src/docs"
             ],
             "styles": [
-              "projects/demo/src/styles.scss",
-              "projects/common/assets/_common.scss"
+              "projects/demo/src/styles.scss"
             ],
             "scripts": 
             [
