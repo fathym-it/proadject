@@ -6,7 +6,6 @@ import {
   ThemePickerModel
 } from '@lowcodeunit/lcu-theme-builder-common';
 
-
 @Component({
   selector: 'lcu-root',
   templateUrl: './app.component.html',
