@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ProadjectState } from 'projects/common/src/lib/state/proadject.state';
-import { PalettePickerService, ThemeBuilderConstants, ThemeBuilderService, ThemePickerModel } from '@lowcodeunit/lcu-theme-builder-common';
+import {
+  PalettePickerService,
+  ThemeBuilderConstants,
+  ThemeBuilderService,
+  ThemePickerModel
+} from '@lowcodeunit/lcu-theme-builder-common';
 
 
 @Component({
@@ -14,7 +18,8 @@ export class AppComponent implements OnInit {
 
   public ThumbnailType: string = 'day';
 
-  public State: ProadjectState;
+  // public State: ProadjectState;
+  public State: any;
 
   constructor(
     protected themeBuilderService: ThemeBuilderService,

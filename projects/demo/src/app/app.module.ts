@@ -27,7 +27,6 @@ import { ThemeBuilderModule } from '@lowcodeunit/lcu-theme-builder-common';
   providers: [],
   bootstrap: [AppComponent],
   exports: [
-    ProadjectModule,
     ThemeBuilderModule
   ],
   entryComponents: []
