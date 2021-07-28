@@ -47,6 +47,7 @@
 		"@aspnet/signalr": "^1.1.4",
 		"@lcu/common": "^1.84.735",
 		"@lowcodeunit/lcu-theme-builder-common": "1.5.74",
+		"@webcomponents/custom-elements": "^1.4.3",
 		"@webcomponents/webcomponentsjs": "^2.5.0",
 		"ngx-build-plus": "^12.2.0",
 		"ngx-color-picker": "^11.0.0",
