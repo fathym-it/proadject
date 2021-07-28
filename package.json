@@ -1,6 +1,6 @@
 {
 	"name": "@proadject/proadject",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"scripts": {
 		"ng": "ng",
 		"clean": "rimraf dist && rimraf projects/demo/src/assets/proadject.lcu.js",
